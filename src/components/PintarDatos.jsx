@@ -12,7 +12,7 @@ const PintarDatos = ({nombrePersonaje}) => {
     useEffect (()=>{
         
         consumirApi(nombrePersonaje)
-        localStorage.setItem('nombreApi', JSON.stringify(nombrePersonaje))
+        
     }, [nombrePersonaje])
 
     const consumirApi = async(nombre)=> {
